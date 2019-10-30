@@ -1,0 +1,90 @@
+body {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(150, 150, 250, 0.3);
+  color: rgb(50,10,10);
+  text-align: center;
+}
+
+div {
+  width: 60%;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(200, 200, 200, 0.7);
+}
+a {
+  text-decoration: none;
+  color: rgb(50,10,10);
+}
+
+ul{
+  padding: 0;
+}
+ul li {
+  display: inline;
+  font-size: 40px;
+}
+i:hover {
+  color: rgb(80, 20, 20);
+  transform: scale(1.2);
+  transition: all 0.7s cubic-bezier(0,1.93,.75,1.28);
+}
+.card-white {
+  background-color: white;
+}
+.button {
+  padding: 15px;
+  background-color: rgba(200, 230, 250, 0.7);
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: rgba(230, 200, 250, 1);
+  transform: scale(1.05);
+  transition: all 0.7s cubic-bezier(.3,3,.84,-0.1);
+}
+
+.round_img {
+  width: 200px;
+  border-radius: 50%;
+}
+.round_img:hover {
+  transform: rotate(0.5turn);
+  transition: all 5s cubic-bezier(.68,.06,.21,.96);
+}
+.transparent-bg {
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  div {
+    width: 80%;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  div {
+    width: 90%;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  div {
+    width: 95%;
+    padding: 20px 0;
+    margin: 10px;
+  }
+  .button {
+  padding: 15px 0;
+  }
+}
+
